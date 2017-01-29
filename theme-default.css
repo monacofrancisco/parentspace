@@ -1,0 +1,459 @@
+/*----------------------------------------------------------------
+    Google Fonts
+----------------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic);
+
+
+/*-------------------------------------------------------------------------------------------------------------
+    Desktop View
+-------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+    Generic Styling
+----------------------------------------------------------------*/
+
+body                                            { font-family: 'Muli', sans-serif; font-weight: 300; background: white; padding: 0; color: #666666; }
+a                                               { color: #65CBC9; }
+input                                           { font-family: 'Muli', sans-serif; font-weight: 300; -webkit-appearance: none; border-radius: 0; }
+.phone                                          { display: none; }
+
+
+
+/*----------------------------------------------------------------
+    Login Page
+----------------------------------------------------------------*/
+
+.post                                           { background: none; border: none; }
+.post a                                         { color: #65CBC9 }
+.post #loginform input                          { padding: 14px; border: 1px solid #CCCCCC; }
+.post #loginform input:-webkit-autofill         { -webkit-box-shadow: 0 0 0 1000px white inset; }
+
+.post #loginform p                              { position: relative; }
+.post #loginform .login-username input          { padding: 14px 14px 14px 40px; }
+.post #loginform .login-username .bg            { background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 920px 2160px; background-position: 0 -320px; width: 50px; height: 50px; position: absolute; top: 2px; left: 0; }
+.post #loginform .login-password input          { padding: 14px 14px 14px 40px; }
+.post #loginform .login-password .bg            { background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 920px 2160px; background-position: 0 -360px; width: 50px; height: 50px; position: absolute; top: 2px; left: 0; }
+
+.post #loginform input[type="checkbox"]         { display: none; }
+.post #loginform .login-remember                { text-align: left; margin-bottom: 80px; }
+.post #loginform .login-remember label          { display: inline-block; line-height: 50px; float: left; width: auto; }
+.post #loginform .login-remember .custom-check  { width: 50px; height: 50px; background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; background-position: 0 -50px; }
+.post #loginform p.login-remember input[type=checkbox]:checked + .custom-check  { background-position: -50px -50px; }
+.post #loginform input[type="submit"]           { border: none; background: #65CBC9; color: white; width: 100%; }
+
+.post #loginform input[type="submit"]:hover     { background: #86d4d3; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+
+
+
+/*----------------------------------------------------------------
+    Header
+----------------------------------------------------------------*/
+
+#header                                         { background: #654094; position: fixed; top: 0; }
+.admin-bar #header                              { position: fixed; top: 32px; }
+#header #menu                                   { max-width: none; border: none; padding: 0 10%; }
+#header #menu .current                          { background: #54327C; }
+#header #menu li a                              { line-height: 60px; padding: 0 30px; color: white; font-weight: 300; font-size: 13px; }
+#header #menu #classes-top:hover #classes-dropdown { display: block; }
+#header #menu #classes-top #classes-dropdown    { display: none; position: fixed; top: 60px; max-width: 250px; background: #7e5caa; padding: 5px 0; webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2); box-shadow: 0 3px 5px rgba(0,0,0,.2); max-height: 75%; overflow-y: scroll; }
+.admin-bar #header #menu #classes-top #classes-dropdown{ top: 92px; }
+#header #menu #classes-top #classes-dropdown li { width: 230px; padding: 5px 10px; }
+#header #menu #classes-top #classes-dropdown li a{ line-height: 50px; padding: 0 0 0 50px; background: #654094 url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; }
+
+#header #menu #classes-top:hover                { background: #7e5caa; }
+#header #menu li a                              { transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+#header #menu li a:hover                        { background: #7e5caa; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+#header #menu #classes-top #classes-dropdown li a:{ transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+#header #menu #classes-top #classes-dropdown li a:hover{ background-color: #744ea2; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+
+
+
+/*----------------------------------------------------------------
+    Menu Sprite
+----------------------------------------------------------------*/
+
+#header #menu #classes-top #classes-dropdown li .baby-nido   { background-position: -1100px -400px; }
+#header #menu #classes-top #classes-dropdown li .baby-nido-a { background-position: -1100px -450px; }
+#header #menu #classes-top #classes-dropdown li .baby-nido-b { background-position: -1100px -500px; }
+#header #menu #classes-top #classes-dropdown li .baby-nido-c { background-position: -1100px -550px; }
+#header #menu #classes-top #classes-dropdown li .baby-nido-d { background-position: -1100px -600px; }
+#header #menu #classes-top #classes-dropdown li .baby-nido-e { background-position: -1100px -650px; }
+#header #menu #classes-top #classes-dropdown li .baby-nido-f { background-position: -1100px -700px; }
+
+#header #menu #classes-top #classes-dropdown li .nido   { background-position: -1100px -750px; }
+#header #menu #classes-top #classes-dropdown li .nido-a { background-position: -1100px -800px; }
+#header #menu #classes-top #classes-dropdown li .nido-b { background-position: -1100px -850px; }
+#header #menu #classes-top #classes-dropdown li .nido-c { background-position: -1100px -900px; }
+#header #menu #classes-top #classes-dropdown li .nido-d { background-position: -1100px -950px; }
+#header #menu #classes-top #classes-dropdown li .nido-e { background-position: -1100px -1000px; }
+#header #menu #classes-top #classes-dropdown li .nido-f { background-position: -1100px -1050px; }
+
+#header #menu #classes-top #classes-dropdown li .class-of-the-2s   { background-position: -1100px -1100px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-2s-a { background-position: -1100px -1150px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-2s-b { background-position: -1100px -1200px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-2s-c { background-position: -1100px -1250px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-2s-d { background-position: -1100px -1300px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-2s-e { background-position: -1100px -1350px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-2s-f { background-position: -1100px -1400px; }
+
+#header #menu #classes-top #classes-dropdown li .class-of-the-3s   { background-position: -1100px -1450px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-3s-a { background-position: -1100px -1500px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-3s-b { background-position: -1100px -1550px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-3s-c { background-position: -1100px -1600px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-3s-d { background-position: -1100px -1650px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-3s-e { background-position: -1100px -1700px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-3s-f { background-position: -1100px -1750px; }
+
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s   { background-position: -1100px -1800px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-a { background-position: -1100px -1850px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-b { background-position: -1100px -1900px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-c { background-position: -1100px -1950px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-d { background-position: -1100px -2000px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-e { background-position: -1100px -2050px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-f { background-position: -1100px -2100px; }
+
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-5s   { background-position: -1100px -2150px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-5s-a { background-position: -1100px -2200px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-5s-b { background-position: -1100px -2250px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-5s-c { background-position: -1100px -2300px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-5s-d { background-position: -1100px -2350px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-5s-e { background-position: -1100px -2400px; }
+#header #menu #classes-top #classes-dropdown li .class-of-the-4s-5s-f { background-position: -1100px -2450px; }
+
+#header #menu #classes-top #classes-dropdown li .no-class { background-position: -1100px -2500px; }
+#header #menu #classes-top #classes-dropdown li .summer-camp { background-position: -1100px -2550px; }
+#header #menu #classes-top #classes-dropdown li .atelier { background-position: -1100px -2600px; }
+#header #menu #classes-top #classes-dropdown li .all { background-position: -1100px -2650px; }
+
+
+
+/*----------------------------------------------------------------
+    Page
+----------------------------------------------------------------*/
+
+#pagewrap                                       { max-width: 540px; margin-top: 80px; border: none; padding: 0 18px 30px; }
+#pagewrap #addnew                               { width: 100%; padding: 0; line-height: 50px; background: #65CBC9; color: white; font-weight: 300; font-size: 12px; border: none; margin: 0; }
+
+.logged-in .post                                { padding: 10px; margin: 20px 0; border: 1px solid #D3D3D3; }
+.logged-in .post h1                             { line-height: 52px; font-size: 13px; padding-bottom: 10px; border-bottom: 1px solid #D3D3D3; }
+.logged-in .post .clearfix .class               { border: none; font-size: 0; width: 50px; height: 50px; padding: 0; background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; }
+.logged-in .post .clearfix .print-button        { border: none; padding: 0; }
+.logged-in .post .clearfix .print-button a      { border: none; font-size: 0; width: 40px; height: 50px; padding: 0; background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; background-position: -300px 0; display: block; }
+.logged-in .post .clearfix .edit-button         { border: none; font-size: 0; width: 50px; height: 50px; padding: 0; background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; background-position: -50px 0; }
+.logged-in .post .content                       { border: none; padding: 10px 2px 16px; margin: 7px 0; border-bottom: 1px solid #D3D3D3; font-size: 12px; }
+.logged-in .post .content p                     { font-size: 12px; line-height: 22px; }
+.logged-in .post .grid                          { border: none; margin: 0; padding: 0; }
+.logged-in .post .upload                        { border: none; font-size: 0; background: url(img/theme-default/add-pics.png) no-repeat; background-size: 100%; }
+#scroller                                       { padding: 20px 0; margin: 10px auto; border: none; }
+#scroller div                                   { padding: 15px; }
+#scroller div img                               { width: 26px; height: 18px; }
+.post .grid .loading                            { background-size: 26px 18px; }
+
+#pagewrap #addnew                               { transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+#pagewrap #addnew:hover                         { background: #86d4d3; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+
+
+
+/*----------------------------------------------------------------
+    New Post
+----------------------------------------------------------------*/
+
+.post#newpost                                   { margin: 0; padding: 0; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75); z-index: 100; border: none; }
+.admin-bar .post#newpost                        { top: 32px; }
+.post#newpost form.edit-content                 { margin: 120px auto auto; background: white; border: none; max-width: 700px; padding: 10px; text-align: left; }
+.post#newpost form.edit-content .close          { border: none; width: 50px; height: 50px; top: 10px; left: 10px; background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; font-size: 0; }
+.post#newpost form.edit-content input[type=text]{ border: none; text-align: center; line-height: 52px; font-size: 13px; font-family: 'Muli', sans-serif; max-width: 150px; margin: 0 auto; display: block; border-bottom: none; padding: 0; }
+.post#newpost form.edit-content input[type=submit]{ display: block; float: right; margin: -2px 0 0 0; }
+.post#newpost form.edit-content input[name=delete]{ display: none; }
+.post#newpost form.edit-content textarea        { border: 1px solid #D3D3D3; padding: 10px; margin: 7px 0 10px; line-height: 20px; border-bottom: 1px solid #D3D3D3; resize: none; font-family: 'Muli', sans-serif; font-weight: 300; font-size: 12px; }
+.post form.edit-content input[type=submit]      { margin: -2px 0 0 10px; border: none; background: #65CBC9; color: white; font-weight: 300; font-size: 12px; line-height: 40px; padding: 0 15px; font-family: 'Muli', sans-serif; font-weight: 300; }
+.post#newpost form.edit-content select          { margin: 10px 0; }
+.post#newpost .loading                          { margin-top: -38px; }
+.post#newpost .loading img                      { width: 26px; height: 18px; }
+
+.post#newpost form.edit-content input[type=submit]{ transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+.post#newpost form.edit-content input[type=submit]:hover{ background: #86d4d3; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+
+
+
+/*----------------------------------------------------------------
+    Edit Post
+----------------------------------------------------------------*/
+
+.post form.edit-content                         { margin: 0 0 10px; padding: 0 0 10px; text-align: right; border-bottom: 1px solid #D3D3D3; position: relative; }
+.post form.edit-content textarea                { border: none; padding: 10px 2px 16px; margin: 7px 0; border-bottom: 1px solid #D3D3D3; font-size: 12px; line-height: 22px; color: #666666; resize: none; font-family: 'Muli', sans-serif; font-weight: 300; }
+.post form.edit-content input[type=submit]      { display: inline-block; float: none; margin: 0 0 0 5px; width: 70px; font-family: 'Muli', sans-serif; font-weight: 300; font-size: 12px; }
+.post form.edit-content input[name=delete]      { position: absolute; top: -62px; right: 0; width: 50px; height: 50px; font-size: 0; background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; background-position: -100px 0; font-family: 'Muli', sans-serif; font-weight: 300; }
+.post .loading                                  { margin-top: 0; }
+.post .loading img                              { width: 26px; height: 18px; }
+
+.post form.edit-content input[name=submit]      { transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+.post form.edit-content input[name=submit]:hover{ background-color: #86d4d3; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+
+
+
+/*----------------------------------------------------------------
+    Class Sprite
+----------------------------------------------------------------*/
+
+.logged-in .post .clearfix .baby-nido           { background-position: -800px 0px; }
+.logged-in .post .clearfix .baby-nido-a         { background-position: -850px 0px; }
+.logged-in .post .clearfix .baby-nido-b         { background-position: -900px 0px; }
+.logged-in .post .clearfix .baby-nido-c         { background-position: -950px 0px; }
+.logged-in .post .clearfix .baby-nido-d         { background-position: -1000px 0px; }
+.logged-in .post .clearfix .baby-nido-e         { background-position: -1050px 0px; }
+.logged-in .post .clearfix .baby-nido-f         { background-position: -1100px 0px; }
+
+.logged-in .post .clearfix .nido                { background-position: -800px -50px; }
+.logged-in .post .clearfix .nido-a              { background-position: -850px -50px; }
+.logged-in .post .clearfix .nido-b              { background-position: -900px -50px; }
+.logged-in .post .clearfix .nido-c              { background-position: -950px -50px; }
+.logged-in .post .clearfix .nido-d              { background-position: -1000px -50px; }
+.logged-in .post .clearfix .nido-e              { background-position: -1050px -50px; }
+.logged-in .post .clearfix .nido-f              { background-position: -1100px -50px; }
+
+.logged-in .post .clearfix .class-of-the-2s     { background-position: -800px -100px; }
+.logged-in .post .clearfix .class-of-the-2s-a   { background-position: -850px -100px; }
+.logged-in .post .clearfix .class-of-the-2s-b   { background-position: -900px -100px; }
+.logged-in .post .clearfix .class-of-the-2s-c   { background-position: -950px -100px; }
+.logged-in .post .clearfix .class-of-the-2s-d   { background-position: -1000px -100px; }
+.logged-in .post .clearfix .class-of-the-2s-e   { background-position: -1050px -100px; }
+.logged-in .post .clearfix .class-of-the-2s-f   { background-position: -1100px -100px; }
+
+.logged-in .post .clearfix .class-of-the-3s     { background-position: -800px -150px; }
+.logged-in .post .clearfix .class-of-the-3s-a   { background-position: -850px -150px; }
+.logged-in .post .clearfix .class-of-the-3s-b   { background-position: -900px -150px; }
+.logged-in .post .clearfix .class-of-the-3s-c   { background-position: -950px -150px; }
+.logged-in .post .clearfix .class-of-the-3s-d   { background-position: -1000px -150px; }
+.logged-in .post .clearfix .class-of-the-3s-e   { background-position: -1050px -150px; }
+.logged-in .post .clearfix .class-of-the-3s-f   { background-position: -1100px -150px; }
+
+.logged-in .post .clearfix .class-of-the-4s     { background-position: -800px -200px; }
+.logged-in .post .clearfix .class-of-the-4s-a   { background-position: -850px -200px; }
+.logged-in .post .clearfix .class-of-the-4s-b   { background-position: -900px -200px; }
+.logged-in .post .clearfix .class-of-the-4s-c   { background-position: -950px -200px; }
+.logged-in .post .clearfix .class-of-the-4s-d   { background-position: -1000px -200px; }
+.logged-in .post .clearfix .class-of-the-4s-e   { background-position: -1050px -200px; }
+.logged-in .post .clearfix .class-of-the-4s-f   { background-position: -1100px -200px; }
+
+.logged-in .post .clearfix .class-of-the-4s-5s  { background-position: -800px -250px; }
+.logged-in .post .clearfix .class-of-the-4s-5s-a{ background-position: -850px -250px; }
+.logged-in .post .clearfix .class-of-the-4s-5s-b{ background-position: -900px -250px; }
+.logged-in .post .clearfix .class-of-the-4s-5s-c{ background-position: -950px -250px; }
+.logged-in .post .clearfix .class-of-the-4s-5s-d{ background-position: -1000px -250px; }
+.logged-in .post .clearfix .class-of-the-4s-5s-e{ background-position: -1050px -250px; }
+.logged-in .post .clearfix .class-of-the-4s-5s-f{ background-position: -1100px -250px; }
+
+.logged-in .post .clearfix .summer-camp         { background-position: -800px -300px; }
+.logged-in .post .clearfix .atelier             { background-position: -850px -300px; }
+.logged-in .post .clearfix .no-class            { background-position: -800px -350px; }
+
+
+
+/*----------------------------------------------------------------
+    Page: Downloads
+----------------------------------------------------------------*/
+
+.category-school .post .clearfix .class         { background: none; }
+
+
+
+/*----------------------------------------------------------------
+    Page: Downloads
+----------------------------------------------------------------*/
+
+.downloads a                                    { color: #666666; text-decoration: none; }
+.downloads .post                                { padding: 20px; background: url(img/theme-default/download.png) no-repeat; background-size: 100px 50px; background-position: right center; }
+.downloads .post h1                             { text-align: left; border: none; line-height: 20px; }
+.downloads .post .content                       { border: none; margin: 0; padding: 0; background: none; }
+.downloads .post .content p                     { font-size: 11px; line-height: 16px; }
+
+.downloads .post                                { transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+.downloads .post:hover                          { background-position: 95% center; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+
+
+
+/*----------------------------------------------------------------
+    Page: Settings
+----------------------------------------------------------------*/
+
+.settings .post                                 { padding: 0; border: none; }
+.settings .post form                            { max-width: none; width: 100%; padding: 0; }
+.settings .post .content                        { padding: 0; margin: 0; border: none; }
+.settings .post .content .settings-parent       { padding: 10px; margin: 20px 0; border: 1px solid #D3D3D3; }
+.settings .post .content .settings-parent:first-child{ margin-top: 0; }
+.settings .post .content .settings-parent .settings-item { margin: 15px 0; }
+.settings .post .content .settings-parent .settings-item label { margin-bottom: 8px; font-weight: 400; }
+.settings .post .content .settings-parent .settings-item input { line-height: 36px; padding-left: 10px; border: 1px solid #D3D3D3; }
+.settings .post .content .settings-parent .settings-item #fname { border: none; }
+.settings .post .content .settings-parent .settings-item #classes { width: 100%; margin: 10px 0 0; }
+.settings .post .content .settings-parent .settings-item #classes label { margin: 0; font-size: 11px; }
+.settings .post .content .settings-parent .settings-item #classes input { display: none; }
+.settings form input[type=submit]               { width: 100%; padding: 0; line-height: 50px; background: #65CBC9; color: white; font-weight: 300; font-size: 12px; border: none; margin: 0; }
+
+.settings form input[type=submit]               { transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+.settings form input[type=submit]:hover         { background: #86d4d3; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; }
+
+
+
+/*----------------------------------------------------------------
+    Print
+----------------------------------------------------------------*/
+
+.single #pagewrap                               { max-width: 960px; }
+.single .post h1                                { text-align: left; background: none; }
+.single .post                                   { background: none; margin: 0; border: none; }
+.single .post h1 span                           { position: relative; float: right; font-size: 0; width: 50px; height: 50px; padding: 0; border: none; border-radius: 0; background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; }
+.single .post .content                          { padding: 0 0 20px; margin-bottom: 30px; }
+.single .post .content p                        { font-size: 15px; line-height: 25px; }
+.single .post .photo                            { width: 300px; height: 200px; margin: 1%; float: left; }
+.single .post .photo img                        { max-width: 100%; max-height: 100%; margin: 0 auto; }
+
+.print .post td                                 { height: 232px; width: 300px; }
+.print .post td img                             { height: 100%; }
+
+
+
+/*----------------------------------------------------------------
+    Single Sprite
+----------------------------------------------------------------*/
+
+.single .post h1 .baby-nido                     { background-position: -800px 0px; }
+.single .post h1 .baby-nido-a                   { background-position: -850px 0px; }
+.single .post h1 .baby-nido-b                   { background-position: -900px 0px; }
+.single .post h1 .baby-nido-c                   { background-position: -950px 0px; }
+.single .post h1 .baby-nido-d                   { background-position: -1000px 0px; }
+.single .post h1 .baby-nido-e                   { background-position: -1050px 0px; }
+.single .post h1 .baby-nido-f                   { background-position: -1100px 0px; }
+
+.single .post h1 .nido                          { background-position: -800px -50px; }
+.single .post h1 .nido-a                        { background-position: -850px -50px; }
+.single .post h1 .nido-b                        { background-position: -900px -50px; }
+.single .post h1 .nido-c                        { background-position: -950px -50px; }
+.single .post h1 .nido-d                        { background-position: -1000px -50px; }
+.single .post h1 .nido-e                        { background-position: -1050px -50px; }
+.single .post h1 .nido-f                        { background-position: -1100px -50px; }
+
+.single .post h1 .class-of-the-2s               { background-position: -800px -100px; }
+.single .post h1 .class-of-the-2s-a             { background-position: -850px -100px; }
+.single .post h1 .class-of-the-2s-b             { background-position: -900px -100px; }
+.single .post h1 .class-of-the-2s-c             { background-position: -950px -100px; }
+.single .post h1 .class-of-the-2s-d             { background-position: -1000px -100px; }
+.single .post h1 .class-of-the-2s-e             { background-position: -1050px -100px; }
+.single .post h1 .class-of-the-2s-f             { background-position: -1100px -100px; }
+
+.single .post h1 .class-of-the-3s               { background-position: -800px -150px; }
+.single .post h1 .class-of-the-3s-a             { background-position: -850px -150px; }
+.single .post h1 .class-of-the-3s-b             { background-position: -900px -150px; }
+.single .post h1 .class-of-the-3s-c             { background-position: -950px -150px; }
+.single .post h1 .class-of-the-3s-d             { background-position: -1000px -150px; }
+.single .post h1 .class-of-the-3s-e             { background-position: -1050px -150px; }
+.single .post h1 .class-of-the-3s-f             { background-position: -1100px -150px; }
+
+.single .post h1 .class-of-the-4s               { background-position: -800px -200px; }
+.single .post h1 .class-of-the-4s-a             { background-position: -850px -200px; }
+.single .post h1 .class-of-the-4s-b             { background-position: -900px -200px; }
+.single .post h1 .class-of-the-4s-c             { background-position: -950px -200px; }
+.single .post h1 .class-of-the-4s-d             { background-position: -1000px -200px; }
+.single .post h1 .class-of-the-4s-e             { background-position: -1050px -200px; }
+.single .post h1 .class-of-the-4s-f             { background-position: -1100px -200px; }
+
+.single .post h1 .class-of-the-4s-5s            { background-position: -800px -250px; }
+.single .post h1 .class-of-the-4s-5s-a          { background-position: -850px -250px; }
+.single .post h1 .class-of-the-4s-5s-b          { background-position: -900px -250px; }
+.single .post h1 .class-of-the-4s-5s-c          { background-position: -950px -250px; }
+.single .post h1 .class-of-the-4s-5s-d          { background-position: -1000px -250px; }
+.single .post h1 .class-of-the-4s-5s-e          { background-position: -1050px -250px; }
+.single .post h1 .class-of-the-4s-5s-f          { background-position: -1100px -250px; }
+
+.single .post h1 .summer-camp                   { background-position: -800px -300px; }
+.single .post h1 .atelier                   { background-position: -850px -300px; }
+.single .post h1 .no-class                      { background-position: -800px -350px; }
+
+
+
+@media print                                    {
+    
+/*-- Header --*/
+
+.single #header                                 { display: none; }
+.single #pagewrap                               { padding-top: 0; margin-top: 0; }
+
+                                                }
+
+
+
+
+
+/*----------------------------------------------------------------
+    Tablet View
+----------------------------------------------------------------*/
+
+@media (max-width: 1024px)                      {
+
+/*----------------------------------------------------------------
+    Header
+----------------------------------------------------------------*/
+
+#header #menu                                   { max-width: none; border: none; padding: 0 10px; }
+    
+                                                }
+
+
+
+
+
+
+/*----------------------------------------------------------------
+    Phone View
+----------------------------------------------------------------*/
+
+@media (max-width: 782px)                       {
+    
+/*----------------------------------------------------------------
+    Generic Styling
+----------------------------------------------------------------*/
+
+.phone                                          { display: block; }
+.desktop                                        { display: none; }
+    
+
+    
+/*----------------------------------------------------------------
+    Header
+----------------------------------------------------------------*/
+
+.admin-bar #header                              { top: 46px; }
+#header #phone-menu                             { display: block; padding-bottom: 10px; }
+#header #phone-menu label                       { display: block; float: left; font-size: 0; width: 50px; height: 50px; margin: 5px; background: url(img/theme-default/icon-sprite-1st.png) no-repeat; background-size: 1150px 2700px; background-position: -350px 0; }
+#header #phone-menu h1                          { line-height: 60px; float: left; color: white; font-weight: 300; font-size: 13px; margin-left: 20px; }
+#header #menu                                   { overflow-y: scroll !important; position: fixed; left: -250px; background: #654094; height: 100%; top: 60px; width: 230px; transition: all 0.3s; }
+#header #menu                                   { background: #7e5caa; }
+.admin-bar #header #menu                        { top: 106px; padding: 5px 10px; }
+#header #menu li                                { width: 100%; background: #9471bc; margin: 5px 0; }
+#header #menu li a                              { line-height: 50px; padding: 0 0 0 20px; }
+#header #menu #classes-top                      { background: #9471bc; }
+#header #menu #classes-top #menu-class          { padding-bottom: 5px; }
+#header #menu #classes-top #classes-dropdown    { position: static; padding: 0 10px; border: none; }
+#header #menu #classes-top #classes-dropdown li { width: 210px; padding: 0; }
+#header #menu #classes-top #classes-dropdown li a { background-color: #7e5caa; }
+#header #menu span                              { float: none; }
+#header #menu span li:last-child                { margin-bottom: 14px; }
+#header #menu .current                          { background: #ac90d4; border: none; }
+#show-menu:checked ~ ul.menu                    { -webkit-transform: translate3d(250px, 0, 0); -moz-transform: translate3d(250px, 0, 0); -ms-transform: translate3d(250px, 0, 0); -o-transform: translate3d(250px, 0, 0); transform: translate3d(250px, 0, 0); }
+
+#header #menu #classes-top:hover                { background: #9471bc; padding-bottom: 5px; }
+#header #menu li a:hover                        { background: #9471bc; }
+    
+    
+    
+/*----------------------------------------------------------------
+    Page
+----------------------------------------------------------------*/
+
+.logged-in .post .clearfix .print-button        { display: none; }
+    
+                                                }
+
+

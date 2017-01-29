@@ -1,0 +1,234 @@
+/*   
+   Theme Name: Escuela
+   Version: 1.0
+*/
+
+html { height: 100%; }
+body { min-height: 100%; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; } 
+
+/*
+   General
+*/
+
+html, body { width: 100%; background: none; font-family: Arial, sans-serif; color: #333; }
+
+#wpadminbar { position: fixed !important; }
+
+/*
+   Header
+*/
+
+#header { display: none; position: relative; width: 100%; z-index: 99; }
+.logged-in #header { display: block; }
+
+#show-menu { display: none; }
+#phone-menu { display: none; }
+
+#header ul.menu { margin: 0 auto; max-width: 950px; padding: 0 5px; border: 1px solid #333; font-size: 90%; font-weight: bold; }
+#header ul.menu li { display: block; float: left; }
+#header ul.menu li.current { background: #ff0; }
+#header ul.menu li a { display: block; padding: 5px; color: #333; text-decoration: none; }
+#header ul.menu li a:hover { color: #08f; }
+#header ul.menu span { float: right; }
+
+/*
+   Pagewrap
+*/
+
+#pagewrap { margin: 0 auto; max-width: 960px; border: 1px solid #333; background: #fff; }
+#pagewrap a, h2 { -webkit-transition: color 0.2s, border-color 0.2s; -moz-transition: color 0.2s, border-color 0.2s; -ms-transition: color 0.2s, border-color 0.2s; -o-transition: color 0.2s, border-color 0.2s; transition: color 0.2s, border-color 0.2s; }
+
+/*
+   Add New
+*/
+
+.post#addnew { margin: 30px auto; padding: 1%; width: 25%; text-align: center; font-size: 120%; font-weight: bold; cursor: pointer; }
+
+.post#newpost { display: none; margin: 30px 3%; padding: 2%; }
+.post#newpost form.edit-content { display: block; position: relative; margin: 0; }
+.post#newpost form.edit-content .close { display: block; position: absolute; right: 0px; top: 0px; width: 40px; height: 40px; text-align: center; line-height: 40px; 
+                                        border-bottom: 1px solid #d3d3d3; border-left: 1px solid #d3d3d3; cursor: pointer; }
+.post#newpost form.edit-content input[type=text] { margin: 0; box-sizing: border-box; width: 100%; padding: 1% 1.5%; font-family: monospace; }
+.post#newpost form.edit-content textarea { margin: 20px 0 0; }
+.post#newpost form.edit-content select { margin: 20px 0 0; }
+.post#newpost form.edit-content input[name=delete] { display: none; }
+
+.post#newpost .loading { margin-top: -25px; }
+
+/*
+   Post
+*/
+
+.post { margin: 30px 3%; padding: 2%; border: 1px solid #333; background: #f0f0f0; }
+
+.post h1 { position: relative; text-align: center; font-size: 120%; font-weight: bold; }
+.post h1 span { padding: 6px 10px; background: #fff; border: 1px solid #333; font-size: 80%; }
+
+.post h1 .class { position: absolute; left: 0px; top: 0px; }
+.post h1 .right-buttons { position: absolute; right: 0px; top: 0px; }
+.post h1 .right-buttons .edit-button { float: left; cursor: pointer; }
+.post h1 .right-buttons .print-button { float: left; margin-right: 6px; cursor: pointer; }
+
+.post a { color: #08f; text-decoration: none; }
+.post a:hover { text-decoration: underline; }
+
+.post p { margin-top: 20px; }
+.post ul { margin-top: 20px; margin-left: 20px; list-style-type: disc; }
+.post ol { margin-top: 20px; margin-left: 20px; list-style-type: decimal; }
+.post .aligncenter { display: block; margin: 25px auto; text-align: center; }
+
+.post img.alignnone { margin: 0; vertical-align: middle; }
+.post img.alignleft { float: left; margin: 0 20px 20px 0; }
+.post img.alignright { float: right; margin: 0 0 20px 20px; }
+.post img.aligncenter { display: block; margin: 25px auto 25px; }
+
+.post .wp-caption.alignnone { margin: 20px auto; }
+.post .wp-caption.alignleft { float: left; margin: 20px 20px 20px 0; }
+.post .wp-caption.alignright { float: right; margin: 20px 0 20px 20px; }
+.post .wp-caption.aligncenter { display: block; margin: 25px auto 25px; }
+.post p.wp-caption-text { text-align: center; font-size: 80%; }
+
+.post hr { clear: both; margin: 15px 0; }
+
+/*
+   Content
+*/
+
+.post .content { margin: 20px 0 0; padding: 2%; border: 1px solid #333; background: #fff; line-height: 1.3em; font-size: 90%; overflow: hidden; }
+.post .content>:first-child { margin-top: 0px; }
+
+/*
+   Grid
+*/
+
+.post .grid  { position: relative; margin-top: 20px; float: left; box-sizing: border-box; background: #fff; width: 100%; padding: 2%; border: 1px solid #333; overflow: hidden; }
+.post .grid .loading { position: absolute; left: 0px; top: 0px; z-index: 1; margin: 0; width: 100%; height: 100%; background: url('img/loading.gif') center center no-repeat #fff; }
+.post .grid img { display: block; float: left; margin: 1%; width: 23%; padding: 0; cursor: pointer; -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); }
+
+@media (max-width: 776px) { .post .grid img { width: 31.3333%; } }
+@media (max-width: 496px) { .post .grid img { width: 48%; } }
+
+/*
+   Edit content
+*/
+
+.post form.edit-content { display: none; margin: 20px 0 0; width: 100%; }
+.post form.edit-content textarea { box-sizing: border-box; width: 100%; height: 100px; padding: 2%; }
+.post form.edit-content input[type=submit] { display: block; float: right; margin: 10px 0 0 10px; padding: 1% 1.5%; border: 1px solid #333; background: #fff; 
+                                           line-height: 1.3em; font-family: Arial, sans-serif; font-size: 90%; cursor: pointer; }
+
+.post .edit { float: left; margin: 10px 0 0; padding: 1% 1.5%; border: 1px solid #333; background: #fff; line-height: 1.3em; font-size: 90%; cursor: pointer; }
+.post .loading { display: none; margin: 10px 0 0; text-align: center; }
+
+/*
+   Upload Photos
+*/
+
+.grid .upload { position: relative; float: left; margin: 1%; width: 23%; height: 0; padding-bottom: 23%; background: #F0F0F0; cursor: pointer; }
+.grid .upload span { position: absolute; left: 0px; top: 45%; width: 100%; text-align: center; }
+
+@media (max-width: 776px) { .grid .upload { width: 31.3333%; padding-bottom: 31.3333%; } }
+@media (max-width: 496px) { .grid .upload { width: 48%; padding-bottom: 48%; } }
+
+.media-frame-menu { display: none !important; }
+.media-frame-title { display: block !important; top: 0 !important; }
+.media-modal-close span { display: none; }
+.media-toolbar .search-form { display: none; }
+.attachment-info .edit-attachment { display: none !important; }
+.attachment-details label.setting { display: none !important; }
+
+/*
+   Printable (single posts)
+*/
+
+.print .post h1 { margin: 0 0 20px; text-align: center; font-size: 22px; font-weight: bold; }
+.print .post .content { margin: 20px 2%; padding: 15px 1.5%; border: 1px solid #000; }
+
+.print .post table { border-collapse: collapse; }
+.print .post td { padding: 10px; vertical-align: middle; text-align: center; }
+.print .post td:first-child { padding-left: 0px; padding-right: 10px !important; }
+.print .post td:last-child { padding-right: 0px; }
+.print .post td img { display: inline; width: auto; max-width: 300px; height: auto; max-height: 300px; }
+
+/*
+   Scroller
+*/
+
+#scroller { margin: 40px auto; max-width: 960px; padding: 15px 0; border: 1px solid #333; background: #fff; text-align: center; }
+#scroller div { margin: 0 3%; }
+
+/*
+   Spotlight & Preloader
+*/
+
+#preloader { position: absolute; top: -9999px; max-width: 100%; overflow: hidden; }
+#preloader img { position: absolute; left: 0px; top: 0px; max-width: 100%; }
+
+#spotlight { position: fixed; left: 0px; top: -9999px; z-index: 999; width: 100%; height: 100%; padding-bottom: 50px; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); text-align: center; white-space: nowrap; cursor: pointer;
+            -webkit-transition: opacity 0.3s; -moz-transition: opacity 0.3s; -ms-transition: opacity 0.3s; -o-transition: opacity 0.3s; transition: opacity 0.3s;
+            -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); }
+#spotlight.jump { -webkit-transition: all 0s !important; -moz-transition: all 0s !important; -ms-transition: all 0s !important; -o-transition: all 0s !important; transition: all 0s !important; }
+#spotlight.hide { opacity: 0; }
+#spotlight.down { top: 0px; }
+
+#spotlight .close { position: absolute; right: 0px; top: 0px; z-index: 999; padding: 18px 20px; background: #000; 
+                   line-height: 1em; font-family: Verdana, sans-serif; font-size: 120%; font-weight: bold; color: #fff; }
+                   
+#spotlight span { display: inline-block; height: 100%; vertical-align: middle; } /* For vertical centering of the image */
+
+#spotlight img { vertical-align: middle; width: auto; max-width: 100%; height: auto; max-height: 100%; box-shadow: 0px 0px 8px 4px #111; }
+#spotlight img.linear { -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -ms-transition: all 0.15s linear; -o-transition: all 0.15s linear; transition: all 0.15s linear; }
+#spotlight img.easeout { -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+#spotlight img.jump { -webkit-transition: all 0s !important; -moz-transition: all 0s !important; -ms-transition: all 0s !important; -o-transition: all 0s !important; transition: all 0s !important; }
+
+/*
+   Login page
+*/
+
+.post.login { padding: 5%; text-align: center; }
+
+#loginform { margin: 0 auto; max-width: 280px; }
+#loginform img.logo  { width: 80%; margin-bottom: 5%; }
+#loginform p.error { margin: 0 0 5px; text-align: center; font-size: 70%; color: #a00; }
+#loginform p { margin: 10px 0; }
+#loginform label { display: inline-block; width: 33%; display: none; }
+#loginform input[type=text], #loginform input[type=password] { display: inline-block; box-sizing: border-box; width: 100%; padding: 2px; border: 1px solid #707070; }
+
+#loginform p.login-remember { margin: 0; text-align: center; }
+#loginform p.login-remember input { vertical-align: middle; }
+#loginform p.login-remember label { display: inline-block; width: 100%; font-size: 80%; }
+
+#loginform p.login-forgot { display: inline-block; width: 100%; font-size: 80%; }
+
+#loginform p.login-submit { text-align: center; }
+#loginform p.login-submit input { cursor: pointer; }
+
+/*
+   Settings page
+*/
+
+.settings .updated { margin-bottom: 20px; padding: 3px; background: #fff; border: 1px solid #000; text-align: center; }
+.settings .updated.success { border: 1px solid #0a0; }
+.settings .updated.fail { border: 1px solid #c00; }
+
+.settings form { margin: 0 auto; padding: 10px 2%; max-width: 400px; }
+.settings form label { display: block; margin-top: 10px; }
+.settings form label:first-child { margin-top: 0px; }
+.settings form input { display: block; box-sizing: border-box; width: 100%; padding: 3px; border: 1px solid #999; }
+
+.settings form table { margin: 10px auto 0; width: 65%; }
+.settings form table th { padding: 5px; vertical-align: middle; text-align: left; }
+.settings form table td { padding: 5px; vertical-align: middle; text-align: left; }
+
+.settings form input[type=submit] { display: block; margin-top: 20px; padding: 1% 1.5%; cursor: pointer; }
+

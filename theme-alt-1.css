@@ -1,0 +1,24 @@
+/*--------------------------------------------------------
+    Colors
+--------------------------------------------------------*/
+
+/*
+color: #6b3f23;
+color: #65cbc9;
+color: #ffb359;
+color: #cfde00;
+color: #333333;
+*/
+
+/*----------------------------------------------------------------
+    Header
+----------------------------------------------------------------*/
+
+#header                                         { background: #ffb359; }
+#header #menu .current                          { background: #f7a055; }
+#header #menu #classes-top #classes-dropdown    { background: #ffbf74; }
+#header #menu #classes-top #classes-dropdown li a{ background-color: #f7a055 }
+
+#header #menu #classes-top:hover                { background: #ffbf74; }
+#header #menu li a:hover                        { background: #ffbf74; }
+#header #menu #classes-top #classes-dropdown li a:hover{ background-color: #ffb359; }

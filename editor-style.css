@@ -1,0 +1,25 @@
+body { padding: 15px; font-family: Arial, sans-serif; color: #333; }
+body>:first-child { margin-top: 0px; }
+
+a { color: #f78b1f; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+:first-child { margin-top: 0px; }
+p { margin-top: 20px; }
+ul { margin-top: 20px; margin-left: 20px; padding: 0px; list-style-type: disc; }
+ol { margin-top: 20px; margin-left: 20px; padding: 0px; list-style-type: decimal; }
+.gallery { margin: 20px auto !important; }
+.aligncenter { display: block; margin: 25px auto; text-align: center; }
+
+img.alignnone { margin: 0; vertical-align: middle; }
+img.alignleft { float: left; margin: 0 20px 20px 0; }
+img.alignright { float: right; margin: 0 0 20px 20px; }
+img.aligncenter { display: block; margin: 25px auto 25px; }
+
+.wp-caption.alignnone { margin: 20px auto; }
+.wp-caption.alignleft { float: left; margin: 20px 20px 20px 0; }
+.wp-caption.alignright { float: right; margin: 20px 0 20px 20px; }
+.wp-caption.aligncenter { display: block; margin: 25px auto 25px; }
+p.wp-caption-text { text-align: center; font-size: 80%; }
+
+hr { clear: both; margin: 15px 0; }
